@@ -1,7 +1,11 @@
+* {
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-size: 13px;
+  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -25,6 +29,7 @@ header nav .nav-right-section {
   list-style: none;
   justify-content: center;
   align-items: center;
+  font-size: 13px;
 }
 
 nav .nav-right-section a {
@@ -63,16 +68,15 @@ main {
 
 main .main-logo img {
   width: 400px;
+  padding-top: 130px;
 }
 
 main .main-input {
-  width: 530px;
+  width: 590px;
   margin: 0 auto;
-  margin-bottom: 35px;
 }
 
 main .main-input-container {
-  width: 560px;
   border-radius: 100px;
   border: 1px solid #dfe1e5;
   display: flex;
@@ -87,19 +91,19 @@ main .main-input input {
   outline: none;
 }
 
-main .main-input-container:hover {
-  box-shadow: 0 1px 6px #20212447;
-  border-color: #dfe1e500;
-}
+/* main .main-input-container:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+} */
 
 main .main-input .search-icon {
   background-image: url("https://cdn0.iconfinder.com/data/icons/very-basic-2-android-l-lollipop-icon-pack/24/search-512.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 18px;
   height: 18px;
-  padding-right: 15px;
+  padding-left: 50px;
 }
 
 main .main-input .micro-icon {
@@ -110,15 +114,17 @@ main .main-input .micro-icon {
   width: 20px;
   height: 20px;
   cursor: pointer;
+  padding-right: 35px;
 }
 
 main .main-buttons {
   display: flex;
   justify-content: center;
+  padding-top: 18px;
 }
 
 main .main-buttons button {
-  margin: 0 5px;
+  margin: 11px 4px;
   padding: 0 16px;
   height: 36px;
   border: none;
@@ -126,18 +132,18 @@ main .main-buttons button {
   cursor: pointer;
   min-width: 54px;
   border-radius: 4px;
-  background-color: #f2f2f2;
+  background-color: #f8f9fa;
   font-size: 14px;
-  color: #5f6368;
+  color: #3c4043;
 }
 
 main .main-buttons button:hover {
-  border: 1px solid #c6c6c6;
+  border: 1px solid #dadce0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  color: #222;
-  background-color: #f2f2f2;
-  margin: 0 4px;
+  color: #202124;
+  background-color: #f8f9fa;
 }
+
 .footer-top {
   position: absolute;
   background-color: #f2f2f2;
@@ -146,7 +152,7 @@ main .main-buttons button:hover {
   border-bottom: 1px solid #dadce0;
   font-size: 15px;
   color: rgba(0, 0, 0, 0.54);
-  width: 95.3%;
+  width: 100%;
 }
 
 footer {
@@ -155,11 +161,11 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  font-size: 14px;
+  font-size: 13px;
   background-color: #f2f2f2;
   border-top: 1px solid #e4e4e4;
   cursor: pointer;
-  width: 98%;
+  width: 100%;
   padding: 10px;
 }
 
@@ -167,22 +173,24 @@ footer ul {
   margin: 10px;
   list-style: none;
   display: flex;
-  padding-left: 0;
 }
 
 footer .footer-left {
   justify-self: left;
+  padding-left: 5px;
 }
 
 footer .footer-right {
   justify-self: right;
   margin-right: 30px;
 }
+footer .space {
+  padding-left: 10px;
+}
 
 footer ul li a {
-  padding-left: 26px;
-  padding-right: 0;
-  color: #5f6368;
+  padding-right: 25px;
+  color: #70757a;
 }
 
 footer ul li a:hover {

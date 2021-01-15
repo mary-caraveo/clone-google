@@ -5,6 +5,7 @@
 
   main .main-logo img {
     width: 200px;
+    padding-top: 50px;
   }
 
   main .main-logo {
@@ -32,7 +33,6 @@
   footer {
     display: block;
     padding: 10px;
-    width: 94%;
     font-size: 13px;
   }
 
@@ -41,7 +41,12 @@
   }
 
   .footer-top {
-    bottom: 82px;
-    width: 83.4%;
+    bottom: 80px;
+  }
+
+  footer .footer-right,
+  .footer-left {
+    justify-content: space-around;
+    padding-inline-start: 10px;
   }
 }
